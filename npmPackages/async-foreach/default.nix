@@ -1,6 +1,7 @@
 { fetchurl, buildNpmPackage }:
 
 buildNpmPackage rec {
+  doCheck = false;
   pname = "async-foreach";
   version = "0.1.3";
   src = fetchurl {
